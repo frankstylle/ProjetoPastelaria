@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+* {
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+html {
+    width: 100vw;
+    height: 100vw;
+    font-size: 65.5%;
+    overflow-x: hidden;
+
+}
+
+.content {
+    width: 100vw;
+    height: 70px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #1f1c1f;
+    position: fixed;
+}
+
+.logo {
+    height: auto;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.logo h3 {
+    color: white;
+    font-size: 1.6rem;
+}
+
+.logo img {
+    width: 70px;
+    height: 100%;
+}
+
+.bi-list {
+    display: none;
+}
+
+.content .list-menu {
+    width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content .list-menu li a {
+    padding: 3rem 1rem 2rem 1rem;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    color: #FFF;
+    font-weight: 500;
+    transition: all 200ms ease-in;
+}
+
+.content .list-menu li a:hover {
+    background-color: #333;
+    border-bottom: 4px solid #ffc506;
+    color: #ffc506;
+}
+
+.first-section {
+    height: 100vh;
+    background-image: linear-gradient(rgba(29, 29, 29, 0.8), rgba(29, 29, 29, 0.8)), url('/img/pastel.png');
+    background-size: cover;
+    background-position: center center;
+    background-position-y: 1vh;
+    background-repeat: no-repeat;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.first-section .conteudo-principal h1,
+.first-section .conteudo-principal h2 {
+    font-family: 'Indie Flower', sans-serif !important;
+}
+
+.first-section .conteudo-principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.first-section h1 {
+    font-size: 6rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 3rem;
+    color: #ffc506;
+}
+
+.first-section h2 {
+    color: gray;
+    font-size: 3rem;
+    margin-bottom: 3rem;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.btn button {
+    background-color: #ffc506;
+    color: black;
+    height: 60px;
+    width: 230px;
+    cursor: pointer;
+    text-transform: uppercase;
+    border-radius: 10px;
+    margin-top: 5rem;
+    font-weight: 700;
+    transition: all 400ms ease-in;
+}
+
+.btn button:hover {
+    border: 1px solid #ffc506;
+    background-color: transparent;
+    color: #ffc506;
+}
+
+.btn {
+    width: 480px;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width: 950px) {
+    .first-section h1 {
+        font-size: 4rem;
+    }
+
+    .first-section h2 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 690px) {
+
+    .content .logo {
+        position: absolute;
+    }
+
+    .content .list-menu {
+        display: none;
+        position: absolute;
+        left: 0;
+    }
+
+    .first-section h1 {
+        font-size: 3rem;
+    }
+
+    .first-section h2 {
+        font-size: 1.8rem;
+    }
+
+    .bi-list {
+        background-color: #1f1c1f;
+        display: block;
+        color: white;
+        position: absolute;
+        right: 25px;
+        line-height: 70px;
+        font-size: 5rem;
+    }
+
+    .btn {
+        flex-direction: column;
+        align-items: center;
+        margin-top: -30px;
+        margin-bottom: -40px;
+    }
+
+    .btn button {
+        margin-bottom: -30px;
+    }
+
+
+}
